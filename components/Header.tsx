@@ -1,4 +1,4 @@
-import Logo from "../src/assets/LogoSmartTV.svg";
+// import Logo from "../src/assets/LogoSmartTV.svg";
 import { Container } from "../src/styles/Header";
 
 export function Header() {
