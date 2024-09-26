@@ -1,17 +1,22 @@
-// import Logo from "../src/assets/LogoSmartTV.svg";
+import Logo from "../src/assets/LogoSmartTV.svg?react"; 
 import { Container } from "../src/styles/Header";
 
 export function Header() {
-  // você pode passar constantes e funções aqui, se necessário
+
+  // functions and constants ?
 
   return (
     <Container>
-      <div className="box">
-        <div className="logo"></div>
-        <div className="menu">
-          <div>Serviços</div>
-          <div>Sobre nós</div>
-          <div>Contato</div>
+      <div className="gradient">
+        <div className="box">
+          <div className="logo">
+            {/* <Logo/> */}
+          </div>
+          <div className="menu">
+            <div>Serviços</div>
+            <div>Sobre nós</div>
+            <div>Contato</div>
+          </div>
         </div>
       </div>
     </Container>

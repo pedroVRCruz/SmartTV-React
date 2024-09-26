@@ -5,80 +5,59 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: start;
-  overflow: hidden;
+  align-items: center;
   height: calc(100dvh - 50px);
+
+  .button {
+    display: flex;
+    width: 550px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    background: var(--Azul-claro, #23a4dd);
+    margin-top: 70px;
+  }
+
+  a {
+    :hover {
+      background-color: var(--Azul-escuro, #1c465f);
+    }
+  }
+
+  .about {
+    max-width: 1150px;
+    text-align: left;
+    margin-top: 130px;
+    margin-bottom: 130px;
+
+    .title {
+      color: var(--Azul-claro, #23a4dd);
+      font-size: 32px;
+    }
+    .text {
+      font-size: 20px;
+    }
+  }
+  .nossaestrutura {
+    display: flex;
+    flex-direction: row;
+    max-width: 1150px;
+    .content {
+      text-align: left;
+      .title {
+        color: var(--Azul-claro, #23a4dd);
+        font-size: 32px;
+      }
+      .text {
+        font-size: 20px;
+      }
+    }
+  }
 
   @media (min-width: 720px) {
     width: 100vw;
     height: calc(100dvh - 70px);
     background-color: var(--color-white-secundary);
-  }
-  
-  .closeModal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: transparent;
-  }
-
-  
-
-  .DashboardCardQtyStyle {
-    color: var(--color-blue-primary);
-    font-size: 30px;
-    font-weight: 500;
-    text-align: center;
-    line-height: 24px;
-
-    @media (min-width: 720px) {
-      font-size: 40px;
-      line-height: 40px;
-    }
-  }
-
-  .DashboardCardLegendStyle {
-    color: var(--color-black-primary);
-    font-size: 16px;
-    text-align: center;
-    white-space: nowrap;
-
-    @media (min-width: 720px) {
-      font-size: 20px;
-    }
-  }
-
-  .DashboardCardIconStyle {
-    width: 80px;
-    height: 80px;
-    @media (min-width: 720px) {
-      width: 100px;
-      height: 100px;
-    }
-  }
-  .click {
-    flex: 2;
-    margin-top: -32px;
-    cursor: pointer;
-    align-self: start;
-    z-index: 1009;
-    width: 355px;
-    height: 170px;
-    background-color: transparent;
-    position: absolute;
-    @media (min-width: 720px) {
-      width: 530px;
-      height: 250px;
-    }
-  }
-
-  .icons{
-    width: 80px;
-    height: 80px;
-    @media (min-width: 720px) {
-      width: 100px;
-      height: 100px;
-    }
   }
 `;

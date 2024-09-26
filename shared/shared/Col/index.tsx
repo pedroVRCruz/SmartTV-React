@@ -35,7 +35,7 @@ export const Col = ({
   height,
   margin,
   marginMobile,
-    maxWidth,
+  maxWidth,
   minWidth,
   minHeight,
   overflowY,
