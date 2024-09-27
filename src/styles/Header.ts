@@ -13,6 +13,7 @@ export const Container = styled.header`
     width: 48px;
     height: 48px;
     margin-left: 60px;
+    align-self: center;
 
   }
 

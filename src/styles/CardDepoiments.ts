@@ -10,8 +10,8 @@ export const Container = styled.text`
     border-radius: 20px;
     display: flex;
 
-    width: 317px;
-    height: 430px;
+    width: 550px;
+    height: 190px;
   }
 
   .content {
@@ -19,20 +19,28 @@ export const Container = styled.text`
     flex-direction: column;
     padding: 20px;
     align-items: center;
-    justify-content: space-between;
+    width: 100%;
+    height: 100%;
 
     .text {
-      text-align: left;
+      justify-content: center;
 
-      .titulo {
+      .nome {
+        color: var(--Branco, #fff);
+        font-family: "Century Gothic";
         font-size: 20px;
-        color: var(--Azul-claro, #23a4dd);
-        font-weight: 700;
-        margin-bottom: 20px;
+        line-height: normal;
+        margin-bottom: 10px;
       }
 
-      .desc {
+      .stars {
+        margin-bottom: 30px;
+      }
+
+      .depoimento {
         font-size: 16px;
+        text-align: left;
+        justify-content: left;
       }
     }
   }

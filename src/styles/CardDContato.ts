@@ -9,31 +9,37 @@ export const Container = styled.text`
     );
     border-radius: 20px;
     display: flex;
-
-    width: 317px;
-    height: 430px;
+    width: 550px;
+    height: 319px;
   }
 
   .content {
     display: flex;
-    flex-direction: column;
-    padding: 20px;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
 
     .text {
-      text-align: left;
+      text-align:left;
 
       .titulo {
-        font-size: 20px;
         color: var(--Azul-claro, #23a4dd);
+        font-family: "Century Gothic";
+        font-size: 32px;
+        font-style: normal;
         font-weight: 700;
+        line-height: normal;
         margin-bottom: 20px;
       }
 
       .desc {
-        font-size: 16px;
+        font-size: 20px;
       }
+    }
+    .image{
+      align-self:center;
     }
   }
 `;

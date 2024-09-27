@@ -1,12 +1,12 @@
-import { Container } from "../src/styles/CardProblemas";
+import { Container } from "../src/styles/CardDContato";
 
-interface CardProblemasProps {
+interface CardContatoProps {
   titulo: string;
   descricao: string;
   imagem: string;
 }
 
-export const CardProblemas = ({ titulo, descricao, imagem }: CardProblemasProps) => {
+export const CardContato = ({  titulo,  descricao,  imagem,}: CardContatoProps) => {
   return (
     <Container>
       <div className="gradient">
@@ -16,7 +16,7 @@ export const CardProblemas = ({ titulo, descricao, imagem }: CardProblemasProps)
             <div className="desc">{descricao}</div>
           </div>
           <div className="image">
-            <img src={imagem} alt={titulo} />
+            <img src={imagem} />
           </div>
         </div>
       </div>
