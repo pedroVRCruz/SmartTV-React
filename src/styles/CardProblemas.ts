@@ -23,16 +23,19 @@ export const Container = styled.text`
 
     .text {
       text-align: left;
+      line-height: normal;
 
       .titulo {
         font-size: 20px;
         color: var(--Azul-claro, #23a4dd);
         font-weight: 700;
         margin-bottom: 20px;
+        line-height: normal;
       }
 
       .desc {
         font-size: 16px;
+        width: 277px;
       }
     }
   }

@@ -35,17 +35,8 @@ export const Container = styled.div`
       font-size: 32px;
       font-weight: 700;
       line-height: 46px;
+      margin-bottom: 20px;
     }
-
-    .visible {
-      overflow: hidden;
-      height: 430px;
-      width: 1150px;
-      .slider {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-      }
     }
   }
 
@@ -95,6 +86,7 @@ export const Container = styled.div`
     .title {
       color: var(--Azul-claro, #23a4dd);
       font-size: 32px;
+      font-weight: 700;
     }
     .text {
       font-size: 20px;
@@ -104,24 +96,71 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     max-width: 1150px;
+    margin-bottom: 130px;
+
     .content {
+      max-width: 790px;
       text-align: left;
       .title {
         color: var(--Azul-claro, #23a4dd);
         font-size: 32px;
+        font-weight: 700;
       }
       .text {
         font-size: 20px;
       }
     }
-  }
+    .visible {
+      width: 317px;
+      overflow: hidden;
+      .images {
+        display: flex;
+        flex-direction: row;
+        animation-name: pausedSlider;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
 
-  .depoiments {
-    .slider {
-      display: flex;
-      flex-direction: row;
-      gap: 50px;
-      margin-top: 130px;
+        @keyframes pausedSlider {
+          0% {
+            transform: translateX(0px);
+          }
+          10% {
+            transform: translateX(0px);
+          }
+          20% {
+            transform: translateX(calc(-317px*1));
+          }
+          30% {
+            transform: translateX(calc(-317px*1));
+          }
+          40% {
+            transform: translateX(calc(-317px*2));
+          }
+          50% {
+            transform: translateX(calc(-317px*2));
+          }
+          60% {
+            transform: translateX(calc(-317px*3));
+          }
+          70% {
+            transform: translateX(calc(-317px*3));
+          }
+          80% {
+            transform: translateX(calc(-317px*4));
+          }
+          90% {
+            transform: translateX(calc(-317px*4));
+          }
+          100% {
+            transform: translateX(calc(-317px*5));
+          }
+        }
+
+        .img {
+          height: 257px;
+          width: 317px;
+        }
+      }
     }
   }
 
@@ -131,6 +170,9 @@ export const Container = styled.div`
     gap: 50px;
     margin-top: 130px;
   }
+
+  
+//mobile
 
   @media (min-width: 720px) {
     width: 100vw;

@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.text`
+
+
   .gradient {
     background: linear-gradient(
       90deg,
@@ -15,6 +17,8 @@ export const Container = styled.text`
   }
 
   .content {
+    overflow-x: hidden;
+    scrollbar-color: grey transparent;
     display: flex;
     flex-direction: column;
     padding: 20px;
