@@ -22,7 +22,7 @@ export const Container = styled.text`
     padding: 30px;
 
     .text {
-      text-align:left;
+      text-align: left;
 
       .titulo {
         color: var(--Azul-claro, #23a4dd);
@@ -38,8 +38,35 @@ export const Container = styled.text`
         font-size: 20px;
       }
     }
-    .image{
-      align-self:center;
+    .image {
+      align-self: center;
     }
   }
+
+  @media (max-width: 767px) {
+    .gradient {
+      width: 317px;
+      height: 267px;
+      padding:10px;
+
+  }
+    .content {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      padding: 10px;
+      width: 317px;
+      height: 267px;
+      .text {
+        .titulo {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+        .desc {
+        font-size: 14px;
+      }
+  }
+    }
+
+
 `;

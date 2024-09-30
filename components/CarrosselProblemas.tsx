@@ -4,14 +4,17 @@ import "@mantine/carousel/styles.css";
 import { Carousel } from "@mantine/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
+// import { useMediaQuery } from '@mantine/hooks';
+
 
 export const CarrosselProblemas = () => {
   const autoplay = useRef(Autoplay({ delay: 2000 }));
 
+
   return (
     <Slider>
       <Carousel
-        align={"start"}
+        align={ "start"}
         slideGap="md"
         slideSize={{ base: "100%", sm: "50%", md: "33.333333%" }}
         loop

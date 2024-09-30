@@ -5,8 +5,6 @@ import { FraseIA } from "../components/FraseIA";
 import { Row } from "../shared/shared/Row";
 import { Header } from "../components/Header";
 // import { Footer } from "../components/Footer";
-import { CardProblemas } from "../components/CardProblemas";
-import { CardDepoiments } from "../components/CardDepoiments";
 import { CardContato } from "../components/CardContato";
 import { CarrosselProblemas } from "../components/CarrosselProblemas";
 import { CarrosselDepoimentos } from "../components/CarrosselDepoimentos";
@@ -15,53 +13,76 @@ import "@mantine/carousel/styles.css";
 function App() {
   return (
     <>
+     
+
       <Header />
+
       <Container>
+      <div className="fixo">
+        <a
+          target="blank"
+          href=" https://wa.me/554130983030?text=Ol%C3%A1,%20minha%20TV%20est%C3%A1%20com%20problema%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica"
+        >
+          <img src="src/assets/whats.svg" />
+        </a>
+      </div>
         <Col>
           {/* precisa passar id para frase ia?*/}
-          <div id="FraseIA">
+          <div className="FraseIA" id="FraseIA">
             <FraseIA />
           </div>
-          <img src="src/assets/Marcas.svg"></img> {/*chamar como componente?*/}
-          <a target="blank" href="https://google.com">
+          <img id="marcasdesk" src="src/assets/Marcas.svg" />
+          <div className="marcasMobile">
+            <div className="imagens">
+              <img src="src/assets/Marcas.svg" />
+              <img src="src/assets/Marcas.svg" />
+            </div>
+          </div>
+          <a
+            target="blank"
+            href=" https://wa.me/554130983030?text=Ol%C3%A1,%20minha%20TV%20est%C3%A1%20com%20problema%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica"
+          >
             <div className="button">Fale conosco</div>
           </a>
         </Col>
-        <div className="carroselProblemas">
+        <div id="services" className="carroselProblemas">
           <div className="titulo">Qual o problema da sua TV?</div>
           <CarrosselProblemas />
         </div>
-
         <div className="buscaentrega">
           <div className="visible">
-            <div className="passo1">
-              <div className="text">
-                Nosso serviço de busca e entrega foi pensado para sua total
-                comodidade.
+            <div className="slider">
+              <div className="passo1">
+                <div className="text">
+                  Nosso serviço de busca e entrega foi pensado para sua total
+                  comodidade.
+                </div>
+                <div className="image">
+                  <img src="src/assets/passo1.svg"></img>
+                </div>
               </div>
-              <div className="image">
-                <img src="src/assets/passo1.svg"></img>
+              <div className="passo2">
+                <div className="image">
+                  <img src="src/assets/passo2.svg"></img>
+                </div>
+                <div className="text">
+                  Oferecemos um serviço ágil e seguro,{" "}
+                </div>
               </div>
-            </div>
-            <div className="passo2">
-              <div className="image">
-                <img src="src/assets/passo2.svg"></img>
-              </div>
-              <div className="text">Oferecemos um serviço ágil e seguro, </div>
-            </div>
-            <div className="passo3">
-              <div className="text">
-                entregando seu aparelho onde você precisar.
-              </div>
-              <div className="image">
-                <img src="src/assets/passo3.svg"></img>
+              <div className="passo3">
+                <div className="text">
+                  entregando seu aparelho onde você precisar.
+                </div>
+                <div className="image">
+                  <img src="src/assets/passo3.svg"></img>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <Row>
-          <div className="about">
+          <div id="about" className="about">
             <div className="title">Sobre nós</div>
             <div className="text">
               Desde 2017, oferecemos aos nossos clientes um serviço de qualidade
@@ -81,7 +102,7 @@ function App() {
         </Row>
         <div className="nossaestrutura">
           <div className="content">
-            <div className="title">Nossa Estrutura</div>
+            <div className="title">Nossa estrutura</div>
             <div className="text">
               Contamos com uma estrutura completa e moderna para oferecer o
               melhor serviço de concerto de TV. Nossas instalações são equipadas
@@ -105,17 +126,19 @@ function App() {
           </div>
         </div>
         <CarrosselDepoimentos />
-        <div className="contato">
+        <div className="contato" id="contact">
           <CardContato
             titulo="Descarte"
             descricao="Se sua TV não tiver conserto ou se você quiser se livrar dela, traga pra gente! Ficaremos felizes em cuidar do descarte de forma responsável para você!"
             imagem="src/assets/descarte.svg"
           />
+          <a target="_blank" 
+           href=" https://wa.me/554130983030?text=Ol%C3%A1,%20minha%20TV%20est%C3%A1%20com%20problema%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica">
           <CardContato
             titulo="Contatos"
             descricao="Sua TV apresentou algum problema? Fique tranquilo! Envie uma mensagem para nossa equipe técnica pelo WhatsApp e resolvemos para você rapidamente. Nos siga no instagram e venha nos visitar!"
             imagem="src/assets/contato.svg"
-          />
+          /></a>
         </div>
       </Container>
       {/* <Footer/> */}

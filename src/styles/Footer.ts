@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.footer`
 
 .inferior{
-  display: flex;
+display: flex;
 height: 80px;
 padding: 10px;
 justify-content: center;

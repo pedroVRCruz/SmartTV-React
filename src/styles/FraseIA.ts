@@ -14,6 +14,20 @@ export const Container = styled.text`
   animation-duration: 8s;
   animation-iteration-count: infinite;
 
+  //tablet
+  @media (max-width: 991px) {
+  min-height: 490px;
+  width: 700px; 
+  font-size: 50px;
+  }
+  //mobile
+  @media (max-width: 767px) {
+  width: 335px; 
+  font-size: 40px;
+  }
+
+  //animações
+
   @keyframes opacitychange {
     0% {
       opacity: 0;

@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.text`
-
-
   .gradient {
     background: linear-gradient(
       90deg,
@@ -45,6 +43,58 @@ export const Container = styled.text`
         font-size: 16px;
         text-align: left;
         justify-content: left;
+      }
+    }
+  }
+
+  //tablet
+  @media (max-width: 991px) {
+    .gradient {
+      padding: 10px;
+      width: 317px;
+      height: 190px;
+    }
+
+    .content {
+      padding: 10px;
+
+      .text {
+        .nome {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        .stars {
+          margin-bottom: 20px;
+        }
+
+        .depoimento {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  //mobile
+  @media (max-width: 767px) { .gradient {
+      padding: 1px;
+      width: 317px;
+      height: 190px;
+    }
+
+    .content {
+      padding: 10px;
+
+      .text {
+        .nome {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+
+        .stars {
+          margin-bottom: 20px;
+        }
+
+
       }
     }
   }
