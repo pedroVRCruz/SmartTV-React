@@ -20,7 +20,7 @@
       #020e1d 79.44%,
       #0a478e 135.79%
     ),
-    url("../assets/Circuito Desktop.svg"); /* Certifique-se de que o caminho esteja correto */
+    url("../assets/Circuito Desktop.svg");
   background-blend-mode: overlay;
 
   text-rendering: optimizeLegibility;
@@ -39,7 +39,4 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  /* max-width: 1150px; */
 }
-
-

@@ -43,30 +43,41 @@ export const Container = styled.text`
     }
   }
 
+  //mobile
   @media (max-width: 767px) {
     .gradient {
-      width: 317px;
-      height: 267px;
-      padding:10px;
+      /* width: 92vw ; */
+      width: clamp(317px, 92vw, 500px);
+      align-items: center;
+      /* height: 60vw; */
+      height: clamp(100px, 60vw, 350px);
 
-  }
+      padding: 10px;
+    }
     .content {
+      justify-content: center;
+      align-items:center;
       display: flex;
       flex-direction: row;
       gap: 20px;
       padding: 10px;
-      width: 317px;
-      height: 267px;
+      width: clamp(317px, 92vw, 500px);
+      height: clamp(100px, 60vw, 400px);
+
+
       .text {
         .titulo {
-        font-size: 20px;
-        margin-bottom: 20px;
-      }
+          font-size: clamp(12px, 5vw, 28px);
+          margin-bottom: 20px;
+        }
         .desc {
-        font-size: 14px;
+          font-size: clamp(10px, 3.5vw, 20px);
+        }
       }
-  }
+      img {
+        width: 30vw;
+        height: 30vw;
+      }
     }
-
-
+  }
 `;

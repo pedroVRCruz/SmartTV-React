@@ -1,5 +1,5 @@
 import { Container } from "../src/styles/FraseIA.ts";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 export function FraseIA() {
   const ListaDeFrases = [

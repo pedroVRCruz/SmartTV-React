@@ -17,12 +17,14 @@ export const Container = styled.text`
   //tablet
   @media (max-width: 991px) {
   min-height: 490px;
-  width: 700px; 
+  max-width: 700px; 
   font-size: 50px;
   }
   //mobile
   @media (max-width: 767px) {
-  width: 335px; 
+    justify-content:center;
+  width: 92%;
+  max-width: 390px; 
   font-size: 40px;
   }
 

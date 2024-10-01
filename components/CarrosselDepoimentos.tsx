@@ -20,7 +20,6 @@ export const CarrosselDepoimentos = () => {
         plugins={[autoplay.current]}
         onMouseEnter={autoplay.current.stop}
         onMouseLeave={autoplay.current.reset}
-        withControls
       >
         <Carousel.Slide>
           <CardDepoiments

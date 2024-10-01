@@ -19,8 +19,7 @@ export const CardContato = ({
         <div className="content">
           <div className="text">
             <a target="blank" href={link}>
-              {" "}
-              <div className="titulo">{titulo}</div>{" "}
+              <div className="titulo">{titulo}</div>
             </a>
             <a target="blank" href={link}>
               <div className="desc">{descricao}</div>

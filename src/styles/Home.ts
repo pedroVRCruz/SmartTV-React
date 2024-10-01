@@ -6,7 +6,6 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  /* max-width: 1150px; */
   overflow: hidden;
 
   .fixo{
@@ -40,7 +39,7 @@ export const Container = styled.div`
     display:none;
   }
 
-  .carroselProblemas {
+  .carrosselProblemas {
     text-align: left;
     margin-top: 130px;
 
@@ -195,7 +194,7 @@ export const Container = styled.div`
     flex-direction: row;
     gap: 50px;
     margin-top: 130px;
-  margin-bottom: 130px;
+    margin-bottom: 130px;
 
   }
   
@@ -267,7 +266,7 @@ a {
   gap: 80px !important;
 }
 
-.carroselProblemas{
+.carrosselProblemas{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -317,10 +316,12 @@ a {
 }
 
 .about {
+  width: 92%;
     max-width: 700px;
     text-align: left;
     margin-top: 80px;
     margin-bottom: 80px;
+    align-items: center;
     .title {
       font-size: 25px;
     }
@@ -332,11 +333,12 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:100%;
     max-width: 700px;
     margin-bottom: 130px;
     gap: 20px;
     .content {
+    text-align: left;
+      align-items:center;
       .title {
         font-size: 25px;
       }
@@ -353,7 +355,7 @@ a {
   @media (max-width: 767px) {
     .fixo{
     position: fixed;
-    bottom: 150px !important;
+    bottom: 170px !important;
     right: 50px !important;
     height: 36px ;
     width: 36px ;
@@ -369,7 +371,7 @@ a {
       height:58px !important;
     }
 
-    .carroselProblemas{
+    .carrosselProblemas{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -380,7 +382,10 @@ a {
 }
 
     .about {
-    max-width: 317px;
+      align-items: flex-start;
+      justify-content: center;
+    width: 92%;
+    max-width: 700px;
     margin-top: 80px;
     margin-bottom: 80px;
 
@@ -394,8 +399,9 @@ a {
     }
   }
     .nossaestrutura {
-    max-width: 317px;
-    margin-bottom: 80px;
+      width: 92%;
+      max-width: 700px;
+      margin-bottom: 80px;
 
     .title {
       font-size: 20px !important;
@@ -404,9 +410,9 @@ a {
     .text {
       font-size: 14px !important;
     }
-  }
+      } }
 
-  }
+
 
 
   `;
