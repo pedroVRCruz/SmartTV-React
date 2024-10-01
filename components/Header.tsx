@@ -1,12 +1,19 @@
+import React, { useState } from "react";
 import { Container } from "../src/styles/Header";
 
-export function Header() {
+export const Header: React.FC = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen((prev) => !prev); // Toggle na visibilidade do dropdown
+  };
+
   return (
     <Container>
       <div className="gradient">
         <div className="box">
           <div className="logo">
-            <img src="../src/assets/LogoSmartTV.svg" />
+            <img src="../src/assets/LogoSmartTV.svg" alt="Logo" />
           </div>
           <div className="menu">
             <a href="#services">
@@ -21,8 +28,10 @@ export function Header() {
           </div>
           <div className="mobilemenu">
             <div className="dropdown">
-              <button>
-                <img src="../src/assets/dropdown.svg" />
+              <button onClick={toggleDropdown}>
+                <img src="../src/assets/dropdown.svg" alt="Menu" />
+              </button>
+              {isDropdownOpen && (
                 <div className="dropdown-content">
                   <a href="#services">
                     <div className="text">Serviços</div>
@@ -34,11 +43,11 @@ export function Header() {
                     <div className="text">Contato</div>
                   </a>
                 </div>
-              </button>
+              )}
             </div>
           </div>
         </div>
       </div>
     </Container>
   );
-}
+};

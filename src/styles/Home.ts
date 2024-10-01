@@ -6,15 +6,13 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  max-width: 1150px;
-  overflow: hidden;
+  /* max-width: 1150px; */
+  /* overflow: hidden; */
 
   .fixo{
     position: fixed;
-    bottom: 150px;
-    right: 50px;
-    height: 64px;
-    width: 64px;
+    bottom: 200px;
+    right: 150px;
     z-index: 999; 
     img{
       height: 64px;
@@ -197,6 +195,8 @@ export const Container = styled.div`
     flex-direction: row;
     gap: 50px;
     margin-top: 130px;
+  margin-bottom: 130px;
+
   }
   
 
@@ -209,13 +209,12 @@ export const Container = styled.div`
 
   .fixo{
     position: fixed;
-    bottom: 150px;
-    right: 50px;
-    height: 64px;
-    width: 64px;
+    bottom: 160px !important;
+    right: 50px !important;
+
     img{
-      height: 46px;
-      width: 46px;
+      height: 46px !important;
+      width: 46px !important;
     }
   }
 
@@ -229,18 +228,36 @@ export const Container = styled.div`
 }
 
 .marcasMobile {
-  display: flex;
-  flex-direction: column ;
+  display: flex !important;
+  flex-direction: column;
   height: 41px;
+  width: 100%;
+  overflow: hidden;
 
-  .imagens {
-    gap: 15px;
+  .visible {
     display: flex;
-    flex-direction: row ;
-    /* animation-name: marcasSlider; */
-    animation-iteration-count: infinite;
-    transition: linear;
-    animation-duration: 30s;
+    max-width: 100%;
+    overflow-x: hidden;
+    justify-content: flex-start; 
+    
+    .slider {
+      display: flex;
+      gap: 15px;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+
+      animation-name: marcasSlider;
+      animation-iteration-count: infinite;
+      animation-timing-function:linear;
+      animation-duration: 30s;
+
+      img {
+        height: 41px;
+        width: auto;
+        flex-shrink: 0;
+      }
+    }
   }
 }
 
@@ -339,18 +356,21 @@ a {
       }
     }
   }
+  .contato{
+    margin-bottom: 130px;
+  }
 }
   //mobile
   @media (max-width: 767px) {
     .fixo{
     position: fixed;
-    bottom: 150px;
-    right: 50px;
-    height: 36px;
-    width: 36px;
+    bottom: 150px !important;
+    right: 50px !important;
+    height: 36px ;
+    width: 36px ;
     img{
-      height: 36px ;
-      width: 36px;
+      height: 36px !important ;
+      width: 36px !important;
     }      
     }
 
