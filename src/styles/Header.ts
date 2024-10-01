@@ -42,6 +42,14 @@ export const Container = styled.header`
   }
 
   @media (max-width: 767px) {
+    .logo{
+      display:flex;
+      align-items: center;
+      img{
+        height: 28px;
+        width: 40.75px;
+      }
+    }
     .menu {
       display: none;
     }
@@ -85,6 +93,9 @@ export const Container = styled.header`
           font-size: 14px;
           font-weight: 700;
           color: #2f2f31;
+        }
+        .text:hover{
+          color:#23A4DD;
         }
 
         a {

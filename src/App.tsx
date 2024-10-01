@@ -18,7 +18,7 @@ function App() {
         <div className="fixo">
           <a
             target="blank"
-            href=" https://wa.me/554130983030?text=Ol%C3%A1,%20minha%20TV%20est%C3%A1%20com%20problema%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica"
+            href="https://wa.me/554130983030?text=Ol%C3%A1,%20minha%20TV%20est%C3%A1%20com%20problema%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica"
           >
             <img src="src/assets/whats.svg" />
           </a>
@@ -38,7 +38,7 @@ function App() {
           </div>
           <a
             target="blank"
-            href=" https://wa.me/554130983030?text=Ol%C3%A1,%20minha%20TV%20est%C3%A1%20com%20problema%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica"
+            href="https://wa.me/554130983030?text=Ol%C3%A1,%20minha%20TV%20est%C3%A1%20com%20problema%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica"
           >
             <div className="button">Fale conosco</div>
           </a>
@@ -129,17 +129,13 @@ function App() {
             titulo="Descarte"
             descricao="Se sua TV não tiver conserto ou se você quiser se livrar dela, traga pra gente! Ficaremos felizes em cuidar do descarte de forma responsável para você!"
             imagem="src/assets/descarte.svg"
-          />
-          <a
-            target="_blank"
-            href=" https://wa.me/554130983030?text=Ol%C3%A1,%20minha%20TV%20est%C3%A1%20com%20problema%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica"
-          >
+          />   
             <CardContato
               titulo="Contatos"
               descricao="Sua TV apresentou algum problema? Fique tranquilo! Envie uma mensagem para nossa equipe técnica pelo WhatsApp e resolvemos para você rapidamente. Nos siga no instagram e venha nos visitar!"
               imagem="src/assets/contato.svg"
+              link="https://wa.me/554130983030?text=Ol%C3%A1,%20minha%20TV%20est%C3%A1%20com%20problema%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica"
             />
-          </a>
         </div>
       </Container>
       <Footer />

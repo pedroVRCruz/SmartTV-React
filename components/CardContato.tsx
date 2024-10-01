@@ -4,19 +4,32 @@ interface CardContatoProps {
   titulo: string;
   descricao: string;
   imagem: string;
+  link?: string;
 }
 
-export const CardContato = ({  titulo,  descricao,  imagem,}: CardContatoProps) => {
+export const CardContato = ({
+  titulo,
+  descricao,
+  imagem,
+  link,
+}: CardContatoProps) => {
   return (
     <Container>
       <div className="gradient">
         <div className="content">
           <div className="text">
-            <div className="titulo">{titulo}</div>
-            <div className="desc">{descricao}</div>
+            <a target="blank" href={link}>
+              {" "}
+              <div className="titulo">{titulo}</div>{" "}
+            </a>
+            <a target="blank" href={link}>
+              <div className="desc">{descricao}</div>
+            </a>
           </div>
           <div className="image">
-            <img src={imagem} />
+            <a target="blank" href={link}>
+              <img src={imagem} />
+            </a>
           </div>
         </div>
       </div>

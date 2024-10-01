@@ -6,8 +6,12 @@ export function Footer() {
       <div className="superior">
         <div className="left">
           <div className="logocontainer">
-            <img src="src/assets/LogoSmartTV.svg"></img>
-            <div className="text"> SMART TV</div>
+            <a href="#">
+              <img src="src/assets/LogoSmartTV.svg"></img>
+            </a>
+            <a href="#">
+              <div className="text"> SMART TV</div>
+            </a>
           </div>
           <div className="triangulo"></div>
         </div>

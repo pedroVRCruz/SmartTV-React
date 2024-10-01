@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: start;
   align-items: center;
   /* max-width: 1150px; */
-  /* overflow: hidden; */
+  overflow: hidden;
 
   .fixo{
     position: fixed;
@@ -229,41 +229,31 @@ export const Container = styled.div`
 
 .marcasMobile {
   display: flex !important;
-  flex-direction: column;
-  height: 41px;
-  width: 100%;
-  overflow: hidden;
+  max-width: 900px;
+  overflow-x: hidden;
+
+
 
   .visible {
-    display: flex;
-    max-width: 100%;
-    overflow-x: hidden;
-    justify-content: flex-start; 
+    overflow: hidden;
     
     .slider {
-      display: flex;
-      gap: 15px;
+      display:flex;
       flex-direction: row;
-      flex-wrap: nowrap;
-      white-space: nowrap;
+      gap: 15px;
 
       animation-name: marcasSlider;
       animation-iteration-count: infinite;
       animation-timing-function:linear;
       animation-duration: 30s;
 
-      img {
-        height: 41px;
-        width: auto;
-        flex-shrink: 0;
-      }
     }
   }
 }
 
 @keyframes marcasSlider {
   0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-984.5px)); }
+  100% { transform: translateX(calc(-992px)); }
 }
 
 a {
@@ -296,7 +286,6 @@ a {
     .slider {
       position:relative;
       display: block;
-
  }
     .passo1{
       position:absolute;  

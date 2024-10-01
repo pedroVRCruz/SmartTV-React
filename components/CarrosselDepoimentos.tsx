@@ -13,7 +13,7 @@ export const CarrosselDepoimentos = () => {
   return (
     <Slider>
       <Carousel
-        align={"start"}
+        align={"center"}
         slideGap={"md"}
         slideSize={"50%"}
         loop
