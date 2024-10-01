@@ -13,7 +13,7 @@ export const CardDepoiments = ({ nome, depoimento, imagem }: CardDepoimentsProps
         <div className="content">
           <div className="text">
             <div className="nome">{nome}</div>
-            <div className="stars"><img src="src/assets/Stars.svg"/></div>
+            <div className="stars"><img src="assets/Stars.svg"/></div>
             <div className="depoimento">{depoimento}</div>
           </div>
           <div className="images">
