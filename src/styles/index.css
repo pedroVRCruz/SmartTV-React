@@ -1,16 +1,15 @@
 @font-face {
   font-family: "Century Gothic";
-  src: url("../assets/fonts/centurygothic.ttf") format("truetype");
+  src: url("../src/assets/fonts/centurygothic.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 :root {
   font-family: "Century Gothic";
-  line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   color: #ffffff;
   background: linear-gradient(
       271deg,
@@ -20,9 +19,8 @@
       #020e1d 79.44%,
       #0a478e 135.79%
     ),
-    url("../assets/Circuito Desktop.svg");
+    url("../src/assets/Circuito Desktop.svg");
   background-blend-mode: overlay;
-
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

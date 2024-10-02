@@ -10,6 +10,9 @@ export const Container = styled.div`
 
   .fixo{
     position: fixed;
+    width: 64px;
+    height: 64px;
+
     bottom: 200px;
     right: 150px;
     z-index: 999; 
@@ -143,7 +146,11 @@ export const Container = styled.div`
       animation-name: pausedSlider;
       animation-duration: 15s;
       animation-iteration-count: infinite;
-
+      
+      img{
+      border-radius:20px;
+      }
+      
       @keyframes pausedSlider {
         0% {
           transform: translateX(0px);
@@ -207,6 +214,9 @@ export const Container = styled.div`
 }
 
   .fixo{
+    height: 46px !important;
+    width: 46px !important;
+
     position: fixed;
     bottom: 160px !important;
     right: 50px !important;
@@ -276,7 +286,7 @@ a {
 .buscaentrega {
   .visible {
     max-width: 281px;
-    max-height: 241px;
+    max-height: 200px;
     overflow: hidden;
     display: flex !important;
     flex-direction: column !important;
@@ -296,12 +306,12 @@ a {
     }
     .passo2{
 
-
+      max-height: 241px;
       position:absolute;
       animation-name: passo2-animation;
       animation-duration: 14s;
       animation-iteration-count: infinite;
-      @keyframes passo2-animation { 0% {transform:translateY(-100%);} 10% {transform:translateY(-100%);} 20% {transform:translateY(-100%);} 30% {transform:translateY(-100%);} 40% {transform:translateY(0%);} 50% {transform:translateY(0%);} 60% {transform:translateY(110%);} 70% {transform:translateY(110%);} 80% {transform:translateY(110%);} 90% {transform:translateY(110%);} 100% {transform:translateY(110%);}}
+      @keyframes passo2-animation { 0% {transform:translateY(-100%);} 10% {transform:translateY(-100%);} 20% {transform:translateY(-100%);} 30% {transform:translateY(-100%);} 40% {transform:translateY(0%);} 50% {transform:translateY(0%);} 60% {transform:translateY(100%);} 70% {transform:translateY(100%);} 80% {transform:translateY(100%);} 90% {transform:translateY(100%);} 100% {transform:translateY(100%);}}
 
     }
     .passo3{
@@ -314,7 +324,6 @@ a {
 
   }
 }
-
 .about {
   width: 92%;
     max-width: 700px;
@@ -357,8 +366,8 @@ a {
     position: fixed;
     bottom: 170px !important;
     right: 50px !important;
-    height: 36px ;
-    width: 36px ;
+    height: 36px !important;
+    width: 36px !important;
     img{
       height: 36px !important ;
       width: 36px !important;
@@ -370,6 +379,7 @@ a {
       width:316px !important;
       height:58px !important;
     }
+    
 
     .carrosselProblemas{
   display: flex;

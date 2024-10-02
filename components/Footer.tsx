@@ -7,7 +7,7 @@ export function Footer() {
         <div className="left">
           <div className="logocontainer">
             <a href="#">
-              <img src="assets/LogoSmartTV.svg"></img>
+              <img src="src/assets/LogoSmartTV.svg"></img>
             </a>
             <a href="#">
               <div className="text"> SMART TV</div>
@@ -17,13 +17,13 @@ export function Footer() {
         </div>
         <div className="redessociais">
           <a href="">
-            <img src="assets/facebook.svg" />
+            <img src="src/assets/facebook.svg" />
           </a>
           <a href="https://www.instagram.com/assistenciasmarttv?igsh=M3MxcWUzcjFyNXQ1">
-            <img src="assets/instagram.svg" />
+            <img src="src/assets/instagram.svg" />
           </a>
           <a href="https://maps.app.goo.gl/c2CLqkXerx5AdKMCA">
-            <img src="assets/localiza.svg" />
+            <img src="src/assets/localiza.svg" />
           </a>
         </div>
       </div>

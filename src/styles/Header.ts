@@ -42,10 +42,12 @@ export const Container = styled.header`
   }
 
   @media (max-width: 767px) {
-    .logo{
-      display:flex;
+    .logo {
+      display: flex;
       align-items: center;
-      img{
+      margin-left: 30px;
+
+      img {
         height: 28px;
         width: 40.75px;
       }
@@ -57,7 +59,7 @@ export const Container = styled.header`
     .mobilemenu {
       display: flex;
       align-items: center;
-      padding-right: 70px;
+      padding-right: 30px;
 
       button {
         background-color: transparent;
@@ -94,8 +96,8 @@ export const Container = styled.header`
           font-weight: 700;
           color: #2f2f31;
         }
-        .text:hover{
-          color:#23A4DD;
+        .text:hover {
+          color: #23a4dd;
         }
 
         a {

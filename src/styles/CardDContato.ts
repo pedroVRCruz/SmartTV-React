@@ -67,11 +67,11 @@ export const Container = styled.text`
 
       .text {
         .titulo {
-          font-size: clamp(12px, 5vw, 28px);
+          font-size: clamp(12px, 5vw, 26px);
           margin-bottom: 20px;
         }
         .desc {
-          font-size: clamp(10px, 3.5vw, 20px);
+          font-size: clamp(10px, 3.5vw, 19px);
         }
       }
       img {

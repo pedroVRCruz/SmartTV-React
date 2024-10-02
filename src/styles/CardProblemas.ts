@@ -20,6 +20,7 @@ export const Container = styled.text`
     padding: 20px;
     align-items: center;
     justify-content: space-between;
+    line-height: normal;
 
     .text {
       text-align: left;
@@ -35,7 +36,21 @@ export const Container = styled.text`
 
       .desc {
         font-size: 16px;
-        width: 277px;
+        max-width: 277px;
+        line-height: normal;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .content {
+      .text {
+        .titulo {
+          font-size: 20px;
+        }
+        .desc {
+          font-size: 14px;
+        }
       }
     }
   }

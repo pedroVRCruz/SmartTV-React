@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.text`
+  line-height: 1.5;
   max-width: 1150px;
   min-height: 511px;
   display: flex;
@@ -16,16 +17,15 @@ export const Container = styled.text`
 
   //tablet
   @media (max-width: 991px) {
-  min-height: 490px;
-  max-width: 700px; 
-  font-size: 50px;
+    min-height: 490px;
+    max-width: 700px;
+    font-size: 50px;
   }
   //mobile
   @media (max-width: 767px) {
-    justify-content:center;
-  width: 92%;
-  max-width: 390px; 
-  font-size: 40px;
+    max-width: 290px;
+    /* font-size: 40px; */
+    font-size: clamp(30px, 8vw, 40px);
   }
 
   //animações
@@ -46,5 +46,6 @@ export const Container = styled.text`
     100% {
       opacity: 0;
     }
+
   }
 `;

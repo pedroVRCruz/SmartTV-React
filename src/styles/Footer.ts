@@ -5,7 +5,7 @@ export const Container = styled.footer`
     height: 120px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
     .left {
       display: flex;
       .logocontainer {
@@ -28,22 +28,23 @@ export const Container = styled.footer`
         border-bottom: 120px solid #1c465e;
       }
       img {
-        height: 50px;
-        width: 50px;
+        height: 52px;
+        width: 72px;
       }
     }
 
     .redessociais {
+      gap: clamp( 130px, 10vw , 150px);
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
       width: 100%;
-      max-width: 400px;
       align-items: center;
-      padding-right: 195px;
+      justify-content: center;
+      /* max-width: 900px; */
+      /* padding-right: 190px; */
+      /* justify-content: space-around; */
     }
   }
-
   .inferior {
     display: flex;
     height: 80px;
@@ -57,6 +58,7 @@ export const Container = styled.footer`
 
     background: var(--Azul-escuro, #1c465f);
   }
+
   //tablet
   @media (max-width: 991px) {
     .superior {
@@ -66,7 +68,7 @@ export const Container = styled.footer`
           min-width: 270px;
           flex-direction: row-gap;
           img {
-            width: 36px;
+            width: 56px;
             height: 36px;
           }
 
@@ -83,7 +85,7 @@ export const Container = styled.footer`
       }
     }
     .redessociais {
-      padding-right: 95px !important;
+      margin-right: 95px !important;
       img {
         width: 30px;
         height: 30px;
@@ -101,31 +103,34 @@ export const Container = styled.footer`
           gap: 0px;
           min-width: 137px;
           img {
-            width: 28px;
+            width: 40.5px;
             height: 28px;
           }
           .text {
             font-size: 12px;
           }
         }
-
         .triangulo {
           width: 0;
           height: 0;
-          border-right: 100px solid transparent;
-          border-bottom: 100px solid #1c465e;
+          border-right: 53px solid transparent;
+          border-bottom: 70px solid #1c465e;
         }
       }
     }
-
     .redessociais {
-      max-width: 185px;
-      padding-right: 26px !important;
-      gap: 20px;
+      /* max-width: 185px; */
+      /* padding-right: 26px !important; */
+      gap: 30px !important;
+      justify-content: space-around !important;
+
       img {
         width: 24px;
         height: 24px;
       }
+    }
+    .inferior {
+      font-size: 12px;
     }
   }
 `;

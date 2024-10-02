@@ -19,19 +19,19 @@ function App() {
             target="blank"
             href="https://wa.me/554130983030?text=Ol%C3%A1,%20minha%20TV%20est%C3%A1%20com%20problema%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica"
           >
-            <img src="assets/whats.svg" />
+            <img src="src/assets/whats.svg" />
           </a>
         </div>
         <Col>
           <div className="FraseIA" id="FraseIA">
             <FraseIA />
           </div>
-          <img id="marcasdesk" src="assets/Marcas.svg" />
+          <img id="marcasdesk" src="src/assets/MarcasDesk.svg" />
           <div className="marcasMobile">
             <div className="visible">
               <div className="slider">
-                <img src="assets/Marcas.svg" />
-                <img src="assets/Marcas.svg" />
+                <img src="src/assets/Marcas.svg" />
+                <img src="src/assets/Marcas.svg" />
               </div>
             </div>
           </div>
@@ -55,12 +55,12 @@ function App() {
                   comodidade.
                 </div>
                 <div className="image">
-                  <img src="assets/passo1.svg"></img>
+                  <img src="src/assets/passo1.svg"></img>
                 </div>
               </div>
               <div className="passo2">
                 <div className="image">
-                  <img src="assets/passo2.svg"></img>
+                  <img src="src/assets/passo2.svg"></img>
                 </div>
                 <div className="text">
                   Oferecemos um serviço ágil e seguro,{" "}
@@ -71,29 +71,29 @@ function App() {
                   entregando seu aparelho onde você precisar.
                 </div>
                 <div className="image">
-                  <img src="assets/passo3.svg"></img>
+                  <img src="src/assets/passo3.svg"></img>
                 </div>
               </div>
             </div>
           </div>
         </div>
-          <div id="about" className="about">
-            <div className="title">Sobre nós</div>
-            <div className="text">
-              Desde 2017, oferecemos aos nossos clientes um serviço de qualidade
-              com excelente custo-benefício, sendo um lugar confiável para
-              consertar sua TV.
-            </div>
-            <div className="text">
-              Nossa equipe altamente treinada está pronta para oferecer o melhor
-              atendimento, tornando sua experiência única e incomparável. Nossas
-              lojas são equipadas para proporcionar um serviço de alta
-              qualidade, com o máximo cuidado com seu aparelho. Utilizamos
-              apenas peças e componentes novos e originais, e revisamos todos os
-              aparelhos completamente, garantindo maior durabilidade. Escolher a
-              SMART TV é a melhor decisão que você pode tomar!
-            </div>
+        <div id="about" className="about">
+          <div className="title">Sobre nós</div>
+          <div className="text">
+            Desde 2017, oferecemos aos nossos clientes um serviço de qualidade
+            com excelente custo-benefício, sendo um lugar confiável para
+            consertar sua TV.
           </div>
+          <div className="text">
+            Nossa equipe altamente treinada está pronta para oferecer o melhor
+            atendimento, tornando sua experiência única e incomparável. Nossas
+            lojas são equipadas para proporcionar um serviço de alta qualidade,
+            com o máximo cuidado com seu aparelho. Utilizamos apenas peças e
+            componentes novos e originais, e revisamos todos os aparelhos
+            completamente, garantindo maior durabilidade. Escolher a SMART TV é
+            a melhor decisão que você pode tomar!
+          </div>
+        </div>
         <div className="nossaestrutura">
           <div className="content">
             <div className="title">Nossa estrutura</div>
@@ -106,16 +106,16 @@ function App() {
           </div>
           <div className="visible">
             <div className="images">
-              <img src="assets/NE1.svg" />
-              <img src="assets/NE2.svg" />
-              <img src="assets/NE3.svg" />
-              <img src="assets/NE4.svg" />
-              <img src="assets/NE5.svg" />
-              <img src="assets/NE1.svg" />
-              <img src="assets/NE2.svg" />
-              <img src="assets/NE3.svg" />
-              <img src="assets/NE4.svg" />
-              <img src="assets/NE5.svg" />
+              <img src="src/assets/NE1.jpg" />
+              <img src="src/assets/NE2.jpg" />
+              <img src="src/assets/NE3.jpg" />
+              <img src="src/assets/NE4.jpg" />
+              <img src="src/assets/NE5.jpg" />
+              <img src="src/assets/NE1.jpg" />
+              <img src="src/assets/NE2.jpg" />
+              <img src="src/assets/NE3.jpg" />
+              <img src="src/assets/NE4.jpg" />
+              <img src="src/assets/NE5.jpg" />
             </div>
           </div>
         </div>
@@ -124,12 +124,12 @@ function App() {
           <CardContato
             titulo="Descarte"
             descricao="Se sua TV não tiver conserto ou se você quiser se livrar dela, traga pra gente! Ficaremos felizes em cuidar do descarte de forma responsável para você!"
-            imagem="assets/descarte.svg"
+            imagem="src/assets/descarte.svg"
           />
           <CardContato
             titulo="Contatos"
             descricao="Sua TV apresentou algum problema? Fique tranquilo! Envie uma mensagem para nossa equipe técnica pelo WhatsApp e resolvemos para você rapidamente. Nos siga no instagram e venha nos visitar!"
-            imagem="assets/contato.svg"
+            imagem="src/assets/contato.svg"
             link="https://wa.me/554130983030?text=Ol%C3%A1,%20minha%20TV%20est%C3%A1%20com%20problema%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica"
           />
         </div>

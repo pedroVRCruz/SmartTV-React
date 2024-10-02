@@ -9,7 +9,6 @@ export const Container = styled.text`
     );
     border-radius: 20px;
     display: flex;
-
     width: 550px;
     height: 190px;
   }
@@ -19,6 +18,7 @@ export const Container = styled.text`
     scrollbar-color: grey transparent;
     display: flex;
     flex-direction: column;
+    gap: 29.4px;
     padding: 20px;
     align-items: center;
     width: 100%;
@@ -26,6 +26,7 @@ export const Container = styled.text`
 
     .text {
       justify-content: center;
+      max-height: 100px;
 
       .nome {
         color: var(--Branco, #fff);
@@ -75,7 +76,8 @@ export const Container = styled.text`
     }
   }
   //mobile
-  @media (max-width: 767px) { .gradient {
+  @media (max-width: 767px) {
+    .gradient {
       padding: 1px;
       width: 317px;
       height: 190px;
@@ -93,8 +95,6 @@ export const Container = styled.text`
         .stars {
           margin-bottom: 20px;
         }
-
-
       }
     }
   }
