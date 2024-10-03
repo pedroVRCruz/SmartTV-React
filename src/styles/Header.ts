@@ -10,8 +10,8 @@ export const Container = styled.header`
   }
 
   .logo {
-    width: 48px;
-    height: 48px;
+    width: 74px;
+    height: 52px;
     margin-left: 60px;
     align-self: center;
   }
@@ -39,6 +39,12 @@ export const Container = styled.header`
 
   .mobilemenu {
     display: none;
+  }
+  @media (max-width: 991px) {
+    .logo {
+      width: 50px;
+      height: 35.15px;
+    }
   }
 
   @media (max-width: 767px) {

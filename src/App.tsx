@@ -19,19 +19,19 @@ function App() {
             target="blank"
             href="https://wa.me/554130983030?text=Ol%C3%A1,%20minha%20TV%20est%C3%A1%20com%20problema%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica"
           >
-            <img src="src/assets/whats.svg" />
+            <img src="/src/assets/whats.svg" />
           </a>
         </div>
         <Col>
           <div className="FraseIA" id="FraseIA">
             <FraseIA />
           </div>
-          <img id="marcasdesk" src="src/assets/MarcasDesk.svg" />
+          <img id="marcasdesk" src="/src/assets/MarcasDesk.svg" />
           <div className="marcasMobile">
             <div className="visible">
               <div className="slider">
-                <img src="src/assets/Marcas.svg" />
-                <img src="src/assets/Marcas.svg" />
+                <img src="/src/assets/Marcas.svg" />
+                <img src="/src/assets/Marcas.svg" />
               </div>
             </div>
           </div>
@@ -55,12 +55,12 @@ function App() {
                   comodidade.
                 </div>
                 <div className="image">
-                  <img src="src/assets/passo1.svg"></img>
+                  <img src="/src/assets/passo1.svg"></img>
                 </div>
               </div>
               <div className="passo2">
                 <div className="image">
-                  <img src="src/assets/passo2.svg"></img>
+                  <img src="/src/assets/passo2.svg"></img>
                 </div>
                 <div className="text">
                   Oferecemos um serviço ágil e seguro,{" "}
@@ -71,7 +71,7 @@ function App() {
                   entregando seu aparelho onde você precisar.
                 </div>
                 <div className="image">
-                  <img src="src/assets/passo3.svg"></img>
+                  <img src="/src/assets/passo3.svg"></img>
                 </div>
               </div>
             </div>
@@ -106,16 +106,16 @@ function App() {
           </div>
           <div className="visible">
             <div className="images">
-              <img src="src/assets/NE1.jpg" />
-              <img src="src/assets/NE2.jpg" />
-              <img src="src/assets/NE3.jpg" />
-              <img src="src/assets/NE4.jpg" />
-              <img src="src/assets/NE5.jpg" />
-              <img src="src/assets/NE1.jpg" />
-              <img src="src/assets/NE2.jpg" />
-              <img src="src/assets/NE3.jpg" />
-              <img src="src/assets/NE4.jpg" />
-              <img src="src/assets/NE5.jpg" />
+              <img src="/src/assets/NE1.jpg" />
+              <img src="/src/assets/NE2.jpg" />
+              <img src="/src/assets/NE3.jpg" />
+              <img src="/src/assets/NE4.jpg" />
+              <img src="/src/assets/NE5.jpg" />
+              <img src="/src/assets/NE1.jpg" />
+              <img src="/src/assets/NE2.jpg" />
+              <img src="/src/assets/NE3.jpg" />
+              <img src="/src/assets/NE4.jpg" />
+              <img src="/src/assets/NE5.jpg" />
             </div>
           </div>
         </div>
@@ -124,12 +124,12 @@ function App() {
           <CardContato
             titulo="Descarte"
             descricao="Se sua TV não tiver conserto ou se você quiser se livrar dela, traga pra gente! Ficaremos felizes em cuidar do descarte de forma responsável para você!"
-            imagem="src/assets/descarte.svg"
+            imagem="/src/assets/descarte.svg"
           />
           <CardContato
             titulo="Contatos"
             descricao="Sua TV apresentou algum problema? Fique tranquilo! Envie uma mensagem para nossa equipe técnica pelo WhatsApp e resolvemos para você rapidamente. Nos siga no instagram e venha nos visitar!"
-            imagem="src/assets/contato.svg"
+            imagem="/src/assets/contato.svg"
             link="https://wa.me/554130983030?text=Ol%C3%A1,%20minha%20TV%20est%C3%A1%20com%20problema%20e%20preciso%20de%20assist%C3%AAncia%20t%C3%A9cnica"
           />
         </div>

@@ -284,19 +284,24 @@ a {
 }
 
 .buscaentrega {
+  /* max-height:241px; */
+
   .visible {
     max-width: 281px;
-    max-height: 200px;
+    max-height: 241px;
     overflow: hidden;
     display: flex !important;
     flex-direction: column !important;
     align-self: self-start !important;
 
     .slider {
+      overflow: hidden;
+      max-height: 245px;
       position:relative;
       display: block;
  }
     .passo1{
+      height: 241px;
       position:absolute;  
       animation-name: passo1-animation;
       animation-duration: 14s;
@@ -305,8 +310,7 @@ a {
 
     }
     .passo2{
-
-      max-height: 241px;
+      height: 241px;
       position:absolute;
       animation-name: passo2-animation;
       animation-duration: 14s;
@@ -315,6 +319,7 @@ a {
 
     }
     .passo3{
+      height: 241px; 
       animation-name: passo3-animation;
       animation-duration: 14s;
       animation-iteration-count: infinite;

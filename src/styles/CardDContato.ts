@@ -46,10 +46,8 @@ export const Container = styled.text`
   //mobile
   @media (max-width: 767px) {
     .gradient {
-      /* width: 92vw ; */
       width: clamp(317px, 92vw, 500px);
       align-items: center;
-      /* height: 60vw; */
       height: clamp(100px, 60vw, 350px);
 
       padding: 10px;

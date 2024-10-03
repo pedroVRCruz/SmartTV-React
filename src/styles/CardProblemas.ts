@@ -35,7 +35,7 @@ export const Container = styled.text`
       }
 
       .desc {
-        font-size: 16px;
+        font-size: 15.5px;
         max-width: 277px;
         line-height: normal;
       }
