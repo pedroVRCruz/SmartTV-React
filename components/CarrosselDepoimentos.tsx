@@ -5,23 +5,21 @@ import { Carousel } from "@mantine/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
 import { useMediaQuery } from '@mantine/hooks';
-// import classes from '../src/styles/Carousel.css';
+import '../src/styles/CarouselStyles.css';
 
 
 export const CarrosselDepoimentos = () => {
   const autoplay = useRef(Autoplay({ delay: 2000 }));
   const mobile = useMediaQuery(`(max-width: 767px)`);
 
-  
-
   return (
     <Slider>
-      <Carousel
+         <Carousel
         align={"center"}
         slideSize={"50%"}
         loop
-        withIndicators = {mobile}
-        // classNames={classes}
+        withIndicators={mobile}
+        classNames={{ indicators: 'custom-indicators' } }
         plugins={[autoplay.current]}
         onMouseEnter={autoplay.current.stop}
         onMouseLeave={autoplay.current.reset}
@@ -54,7 +52,7 @@ export const CarrosselDepoimentos = () => {
           <CardDepoiments
             nome="Eliane Skrippa"
             depoimento="Super feliz com o atendimento, minha TV ficou pronta no dia, com um preço bem acessível"
-            imagem="/src/assets/depoimentimage.svg"
+            imagem="assets/depoimentimage.svg"
           />
         </Carousel.Slide>
         <Carousel.Slide>

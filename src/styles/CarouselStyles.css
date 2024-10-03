@@ -1,0 +1,19 @@
+.custom-indicators {
+  padding-top: 20px;
+}
+
+.custom-indicators button {
+
+  height: 15px;
+  margin-left: 1px;
+  margin-right: 3px;
+  border-radius: 50%;
+  background-color: var(--Branco, #ffffff);
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.custom-indicators button[data-active] {
+  
+  background-color: var(--Azul-claro, #23a4dd);
+}

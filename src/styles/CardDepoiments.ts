@@ -9,7 +9,7 @@ export const Container = styled.text`
     );
     border-radius: 20px;
     display: flex;
-    width: 550px;
+    width: clamp(317px, 92vw, 550px);
     height: 190px;
   }
 
@@ -52,7 +52,7 @@ export const Container = styled.text`
   @media (max-width: 991px) {
     .gradient {
       padding: 10px;
-      width: 317px;
+      width: clamp(317px, 92vw, 520px);
       height: 190px;
     }
 
@@ -61,7 +61,7 @@ export const Container = styled.text`
 
       .text {
         .nome {
-          font-size: 20px;
+          font-size: clamp(12px, 5vw, 20px);
           margin-bottom: 10px;
         }
 
@@ -70,7 +70,7 @@ export const Container = styled.text`
         }
 
         .depoimento {
-          font-size: 14px;
+          font-size: clamp(10px, 3.5vw, 14px);
         }
       }
     }
@@ -79,7 +79,7 @@ export const Container = styled.text`
   @media (max-width: 767px) {
     .gradient {
       padding: 1px;
-      width: 317px;
+      width: clamp(317px, 85vw, 500px);
       height: 190px;
     }
 
