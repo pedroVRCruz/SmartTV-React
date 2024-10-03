@@ -1,4 +1,4 @@
-import { Slider } from "../src/styles/CarrosselProblemas";
+import { Slider } from "../src/styles/CarrosselDepoimentos";
 import { CardDepoiments } from "./CardDepoiments";
 import "@mantine/carousel/styles.css";
 import { Carousel } from "@mantine/carousel";

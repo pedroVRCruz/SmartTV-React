@@ -52,7 +52,7 @@ export const Container = styled.text`
   @media (max-width: 991px) {
     .gradient {
       padding: 10px;
-      width: clamp(317px, 92vw, 520px);
+      width: clamp(317px, 92vw, 550px);
       height: 190px;
     }
 
@@ -70,7 +70,7 @@ export const Container = styled.text`
         }
 
         .depoimento {
-          font-size: clamp(10px, 3.5vw, 14px);
+          font-size: clamp(10px, 3.5vw, 16px);
         }
       }
     }
