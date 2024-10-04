@@ -24,7 +24,7 @@ export const Header: React.FC = () => {
         <div className="box">
           <div className="logo">
             <a href="#">
-              <img src="assets/LogoSmartTV.svg" alt="Logo" />{" "}
+              <img src="/src/assets/LogoSmartTV.svg" alt="Logo" />{" "}
             </a>
           </div>
           <div className="menu">
@@ -41,7 +41,7 @@ export const Header: React.FC = () => {
           <div className="mobilemenu">
             <div className="dropdown">
               <button onClick={toggleDropdown}>
-                <img src="assets/dropdown.svg" alt="Menu" />
+                <img src="/src/assets/dropdown.svg" alt="Menu" />
               </button>
               {isDropdownOpen && (
                 <div className="dropdown-content">

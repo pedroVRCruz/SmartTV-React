@@ -52,7 +52,7 @@ export const CarrosselDepoimentos = () => {
           <CardDepoiments
             nome="Eliane Skrippa"
             depoimento="Super feliz com o atendimento, minha TV ficou pronta no dia, com um preço bem acessível"
-            imagem="assets/depoimentimage.svg"
+            imagem="/src/assets/depoimentimage.svg"
           />
         </Carousel.Slide>
         <Carousel.Slide>

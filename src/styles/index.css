@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Century Gothic";
-  src: url("../assets/fonts/centurygothic.ttf") format("truetype");
+  src: url("..//src/assets/fonts/centurygothic.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
@@ -9,7 +9,6 @@
   font-family: "Century Gothic";
   font-weight: 400;
 
-  /* color-scheme: light dark; */
   color: #ffffff;
   background: linear-gradient(
       271deg,
@@ -19,10 +18,13 @@
       #020e1d 79.44%,
       #0a478e 135.79%
     ),
-    url("../assets/Circuito Desktop.svg");
-    background-size: 100% auto;
-    background-repeat: no-repeat; 
+    url("../src/assets/Circuito Desktop.svg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-blend-mode: overlay;
+
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -39,4 +41,9 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+@media(max-width: 767px) {
+  
+
 }
