@@ -20,6 +20,8 @@
       #0a478e 135.79%
     ),
     url("../assets/Circuito Desktop.svg");
+    background-size: 100% auto;
+    background-repeat: no-repeat; 
   background-blend-mode: overlay;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
